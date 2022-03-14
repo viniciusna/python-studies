@@ -1,0 +1,1 @@
+"""Faça um programa que receba a base e altura de um triângulo e imprima a área dele."""
