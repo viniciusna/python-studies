@@ -1,3 +1,7 @@
-"""No exercício acima você calculou a área de um triângulo a partir da sua base e altura.
-Faça um programa que receba os 3 lados de um triângulo – s1, s2 e s3 – e calcule sua área.
-Compare a resposta com o exercício acima, dada das mesmas entradas. Os resultados devem ser idênticos."""
+"""Faça um programa que receba do usuário seu peso em kg e altura em metros e imprima o
+Índice de Massa Corporal (IMC) do usuário."""
+
+weight = float(input("Qual o seu peso (em Kg)? "))
+height = float(input("Qual a sua altura (em metros)? "))
+
+print(f"Seu IMC é {weight/height**2}")

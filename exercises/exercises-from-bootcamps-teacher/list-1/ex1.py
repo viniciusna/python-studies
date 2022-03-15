@@ -7,3 +7,14 @@
 •	O resultado de log10 de A;
 •	O resultado de A elevado a B;
 """
+import math
+
+A = int(input("Primeiro número: "))
+B = int(input("Segundo número: "))
+
+print(f"{A} + {B} = {A + B}")
+print(f"{B} - {A} = {B - A}")
+print(f"{A} * {B} = {A*B}")
+print(f"A parte inteira da divisão {A}/{B} é {A//B} e seu resto é {A%B}")
+print(f"log10(A) = {math.log10(A)}")
+print(f"A^B = {A**B}")

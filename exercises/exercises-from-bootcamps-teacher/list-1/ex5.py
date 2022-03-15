@@ -1,3 +1,11 @@
-"""No exercício acima você calculou a área de um triângulo a partir da sua base e altura.
-Faça um programa que receba os 3 lados de um triângulo – s1, s2 e s3 – e calcule sua área.
-Compare a resposta com o exercício acima, dada das mesmas entradas. Os resultados devem ser idênticos."""
+"""Escreva um programa que leia do usuário um número de 4 dígitos e imprima a soma destes dígitos.
+Exemplo, se o usuário digitar 3141 seu programa deverá imprimir na tela 
+3+1+4+1=9
+3+1+4+1=9"""
+
+number = input("Insira um número de 4 dígitos: ")
+
+if len(number) == 4:
+    print(f"{int(number[0])} + {int(number[1])} + {int(number[2])} + {int(number[3])} = {int(number[0]) + int(number[1]) + int(number[2]) + int(number[3])}")
+else:
+    print("Tem que digitar um número com 4 dígitos :(")

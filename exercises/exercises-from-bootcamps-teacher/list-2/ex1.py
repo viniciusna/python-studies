@@ -6,3 +6,9 @@ para a lista [1, 3, 6, “H”, [7,7,7]] a saída deve ser:
 >> Elemento 6 na posição 2
 >> Elemento “H” na posição 3
 """
+
+array = [1, 3, 6, "h", [7,7,7]]
+
+for index, element in enumerate(array):
+    print(f"Elemento {element} na posição {index}")
+print(list(enumerate(array)))

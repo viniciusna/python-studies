@@ -5,3 +5,8 @@ Exemplo: para a lista [5,4,6,8,3,4] a saída deve ser
 
 Obs: caso o maior ou o menor número sejam repetidos, trazer a menor posição.
 """
+
+array = [1, 6, 3, 4, 5, 6]
+
+print(f" O maior número é {max(array)} e está na posição {array.index(max(array))}")
+print(f" O maior número é {min(array)} e está na posição {array.index(min(array))}")
