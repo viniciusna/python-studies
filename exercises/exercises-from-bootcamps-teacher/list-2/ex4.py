@@ -6,3 +6,18 @@ as temperaturas acima da média anual, e em que mês elas ocorreram (mostrar o m
 >> 3 – março
 >> 6 – junho
 """
+
+months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+averages = []
+
+for month in months:
+    averageTemperature = float(input(f"Temperatura média do mês de {month} (em °C): "))
+    averages.append(averageTemperature)
+
+averageAnnual = round(sum(averages) / len(averages), 2)
+
+print(f"Meses com temperatura acima da média anual de {averageAnnual:.2f}°C")
+
+for index, average in enumerate(averages):
+    if averageAnnual < average:
+        print(f"{index + 1} - {months[index]} com temperatura de {average}°C")
