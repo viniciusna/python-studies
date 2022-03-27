@@ -21,3 +21,24 @@ Atleta: Aparecido Parente
 Melhor nota: 9.9 
 
 Pior nota: 7.5 """
+
+name = input("Nome do atleta: ")
+grades = []
+
+for i in range(7):
+    grade = float(input(f"Digite a {i + 1}º nota: "))
+    grades.append(grade)
+
+highestGrade = max(grades)
+lowestGrade = min(grades)
+
+average = ( sum(grades) - highestGrade - lowestGrade ) / ( len(grades) - 2 )
+
+print(f"Atleta: {name} \n")
+
+for grade in grades:
+    print(f"Nota: {grade : .2f}")
+
+print(f"\nResultado final: {average}")
+print(f"Melhor nota: {highestGrade}")
+print(f"Pior nota: {lowestGrade}")
